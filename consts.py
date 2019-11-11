@@ -1,0 +1,4 @@
+ENTITY_ITERATION = 'entities'
+VIEW_ITERATION = 'views'
+
+UNABLE_TO_FIND_BLOCK = -1
