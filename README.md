@@ -1,13 +1,21 @@
 # Citation 
 
-Nilforoshan, Hamed, and Neil Shah. "SilceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs." IEEE DSAA (2019).
+MLA:
 
-@article{nilforoshan2019silcendice,
-  title={SilceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs},
-  author={Nilforoshan, Hamed and Shah, Neil},
-  journal={IEEE DSAA},
-  year={2019}
-}
+		Nilforoshan, Hamed, and Neil Shah. "SilceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs." IEEE DSAA (2019).
+
+bibtex:
+
+		Nilforoshan, Hamed, and Neil Shah. "SilceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs." IEEE DSAA (2019).
+    @article{nilforoshan2019silcendice, 
+    title={SilceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs},
+    author={Nilforoshan, Hamed and Shah, Neil},
+    journal={IEEE DSAA},
+    year={2019}
+    }
+
+
+
 
 
 # Background
