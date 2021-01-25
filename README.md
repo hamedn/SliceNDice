@@ -1,3 +1,5 @@
+![plot](./example.png)
+
 # Citation 
 
 MLA:
