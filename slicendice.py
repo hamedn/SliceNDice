@@ -605,7 +605,7 @@ class SliceNDice:
                     benefit = next_change[1]
 
                     # remove no-benefit changes from list
-                    if benefit <= 0:
+                    if benefit <= 0 or math.isnan(benefit):
                         ranked_changes.pop(0)
                         continue
 
@@ -624,6 +624,7 @@ class SliceNDice:
                 next_change = ranked_changes.pop(0)
                 benefit = self.compute_susp_delta(next_change[0], chosen_views, chosen_entities, block_metadata)
                 history.append(next_change[0][self.job_params.ENTITY_ID_FIELD])
+
                 if benefit > 0:
                     block_metadata = self.add_or_del_entity(next_change[0], chosen_entities, block_metadata)
                     print_line_to_log_file('Top entity: {}'.format(next_change[0][self.job_params.ENTITY_ID_FIELD]),
