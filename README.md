@@ -20,7 +20,7 @@ bibtex:
 # Background
 This repository contains code for SliceNDice, an approach to discover clusters of similar entities which behave 
 synchronously across possibly multiple features/views, using the multi-view graph mining approach proposed in 
-[*SliceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs  (Nilforoshan & Shah, 2019)*](https://drive.google.com/open?id=1aByTr2fPm_Z8AVDpyvE8paAVdpR6B4Ns).  The approach accepts 
+[*SliceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs  (Nilforoshan & Shah, 2019)*](https://arxiv.org/abs/1908.07087).  The approach accepts 
 as input a dataframe of shape *(n_entities, n_views + 1)*, using 1 column as an entity identifier, where the cells of 
 the dataframe are sets of strings representing possibly multiple attribute values associated with the entity on that 
 view.  The approach also takes as input a parameter *Z* specifying the number of views on which to find synchronous 

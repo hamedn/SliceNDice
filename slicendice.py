@@ -322,12 +322,12 @@ class SliceNDice:
         :return: suspiciousness score of a single view, defined as per Defn. 2 (MVSG scoring metric) from the paper;
         negative log-likelihood under MVERE model
         """
-
         volume = (num_nodes_in_block * (num_nodes_in_block - 1)) / 2.0
         susp = (volume * np.log(background_view_density)) + (volume * np.log(volume)) - volume - np.log(volume) - (
                 volume * np.log(mass_in_block)) + np.log(mass_in_block) + (
                        mass_in_block * (1.0 / background_view_density))
 
+        #return np.log2(susp)
         return susp
 
     def compute_block_metadata(self, chosen_entities, disable_idf=False, return_attr_to_entity_map=False):
@@ -534,7 +534,7 @@ class SliceNDice:
         :param susp: original (untransformed) suspiciousness score
         :return: more interpretable (transformed) suspiciousness score
         """
-        return np.log2(susp)
+        return susp
 
     def optimize_block_susp(self, chosen_entities, chosen_views, random_seed, local_entity_whitelist=set()):
         """
