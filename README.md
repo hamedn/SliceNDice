@@ -1,4 +1,4 @@
-![plot](./example.png)
+![visual](./example.png)
 
 # Citation 
 
